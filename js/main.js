@@ -41,10 +41,10 @@ colors_list.forEach((item) => {
 // random backgrounds generator
 let landing = document.querySelector(".landing");
 let back_array = [
-  "url(./img/fig1.jpg)",
-  "url(./img/fig2.jpg)",
-  "url(./img/fig3.jpg)",
-  "url(./img/fig4.jpg)",
+  "url(../img/fig1.jpg)",
+  "url(../img/fig2.jpg)",
+  "url(../img/fig3.jpg)",
+  "url(../img/fig4.jpg)",
 ];
 let i = true;
 
@@ -126,7 +126,7 @@ let aboutText2 = document.querySelector(".about-us .about-box p")
 let aboutImg = document.querySelector(".about-us .about-image img")
 let landText =  document.querySelector(".landing .text-landing")
 let arrayAbout = [aboutText,aboutText2]
-
+let load = document.querySelector(".load-container")
 
 window.onload = (eo) => {
   header.style.opacity ="1"
@@ -138,6 +138,8 @@ window.onload = (eo) => {
 
   landText.style.opacity ="1"
   landText.style.transform = "translateY(0)"
+
+load.style.transform = "translateX(100%)"
 }
 
 
@@ -146,7 +148,7 @@ window.onload = (eo) => {
 window.onscroll = (eo) => {
 
   // filling range on scroll
-  if (window.scrollY >= skills.offsetTop - 270) {
+  if (window.scrollY >= skills.offsetTop - 250) {
     range.forEach((ele) => {
       ele.style.width = `${ele.dataset.range}%`
     })
@@ -157,7 +159,7 @@ window.onscroll = (eo) => {
   }
 
   // changing color on scroll
-  if(window.scrollY >= about.offsetTop - 400){
+  if(window.scrollY >= about.offsetTop - 350){
     settings_icon.style.backgroundColor = `var(--main-color)`
     document.querySelector(".settings .icon-settings i").style.color = "white"
 
@@ -175,7 +177,7 @@ window.onscroll = (eo) => {
   }
 
   // animation on scroll img
-  if (window.scrollY >= gallery.offsetTop - 350) {
+  if (window.scrollY >= gallery.offsetTop - 330) {
     imgs.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -183,7 +185,7 @@ window.onscroll = (eo) => {
    }
 
   //  features anim
-  if (window.scrollY >= features.offsetTop - 350) {
+  if (window.scrollY >= features.offsetTop - 320) {
     featBox.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -191,7 +193,7 @@ window.onscroll = (eo) => {
    }
 
     //  testemonials anim
-  if (window.scrollY >= testemonials.offsetTop -350) {
+  if (window.scrollY >= testemonials.offsetTop -320) {
     tesBox.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -199,7 +201,7 @@ window.onscroll = (eo) => {
    }
 
       //  timeline anim
-  if (window.scrollY >= timeline.offsetTop -300) {
+  if (window.scrollY >= timeline.offsetTop -290) {
    leftTime.forEach((ele) => {
     ele.style.transform = "translateX(0)"
     ele.style.opacity = "1"
@@ -212,7 +214,7 @@ window.onscroll = (eo) => {
    }
 
       //  contact anim
-  if (window.scrollY >= contact.offsetTop -300) {
+  if (window.scrollY >= contact.offsetTop -250) {
     contactInput.forEach((ele) => {
       ele.style.transform = "translateX(0)"
       ele.style.opacity = "1"
