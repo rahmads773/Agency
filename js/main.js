@@ -41,10 +41,10 @@ colors_list.forEach((item) => {
 // random backgrounds generator
 let landing = document.querySelector(".landing");
 let back_array = [
-  "url(../img/fig1.jpg)",
-  "url(../img/fig2.jpg)",
-  "url(../img/fig3.jpg)",
-  "url(../img/fig4.jpg)",
+  "url(img/fig1.jpg)",
+  "url(img/fig2.jpg)",
+  "url(img/fig3.jpg)",
+  "url(img/fig4.jpg)",
 ];
 let i = true;
 
