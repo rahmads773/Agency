@@ -148,7 +148,7 @@ load.style.transform = "translateX(100%)"
 window.onscroll = (eo) => {
 
   // filling range on scroll
-  if (window.scrollY >= skills.offsetTop - 250) {
+  if (window.scrollY >= skills.offsetTop - 280) {
     range.forEach((ele) => {
       ele.style.width = `${ele.dataset.range}%`
     })
@@ -159,7 +159,7 @@ window.onscroll = (eo) => {
   }
 
   // changing color on scroll
-  if(window.scrollY >= about.offsetTop - 350){
+  if(window.scrollY >= about.offsetTop - 370){
     settings_icon.style.backgroundColor = `var(--main-color)`
     document.querySelector(".settings .icon-settings i").style.color = "white"
 
@@ -177,7 +177,7 @@ window.onscroll = (eo) => {
   }
 
   // animation on scroll img
-  if (window.scrollY >= gallery.offsetTop - 330) {
+  if (window.scrollY >= gallery.offsetTop - 370) {
     imgs.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -185,7 +185,7 @@ window.onscroll = (eo) => {
    }
 
   //  features anim
-  if (window.scrollY >= features.offsetTop - 320) {
+  if (window.scrollY >= features.offsetTop - 350) {
     featBox.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -193,7 +193,7 @@ window.onscroll = (eo) => {
    }
 
     //  testemonials anim
-  if (window.scrollY >= testemonials.offsetTop -320) {
+  if (window.scrollY >= testemonials.offsetTop -350) {
     tesBox.forEach((ele) => {
       ele.style.transform = "translateY(0)"
       ele.style.opacity = "1"
@@ -201,7 +201,7 @@ window.onscroll = (eo) => {
    }
 
       //  timeline anim
-  if (window.scrollY >= timeline.offsetTop -290) {
+  if (window.scrollY >= timeline.offsetTop -320) {
    leftTime.forEach((ele) => {
     ele.style.transform = "translateX(0)"
     ele.style.opacity = "1"
@@ -214,7 +214,7 @@ window.onscroll = (eo) => {
    }
 
       //  contact anim
-  if (window.scrollY >= contact.offsetTop -250) {
+  if (window.scrollY >= contact.offsetTop -300) {
     contactInput.forEach((ele) => {
       ele.style.transform = "translateX(0)"
       ele.style.opacity = "1"
